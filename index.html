@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="SteamFolio - Advanced Steam Inventory Tracker & Analytics" />
     <title>SteamFolio | Investment Tracker</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       // Polyfill for process.env to prevent crashes in browser environment
       window.process = {
@@ -14,94 +13,11 @@
           API_KEY: '' // The user will need to configure this in their build pipeline or I can add a UI input later if requested
         }
       };
-
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              steam: {
-                900: '#171a21',
-                800: '#1b2838',
-                700: '#2a475e',
-                600: '#66c0f4',
-                500: '#c7d5e0',
-              },
-              'profit-green': '#4cff00',
-              'loss-red': '#ff4c4c',
-            },
-            fontFamily: {
-              sans: ['Outfit', 'sans-serif'],
-            },
-            animation: {
-              'fade-in': 'fadeIn 0.2s ease-out',
-              'slide-down': 'slideDown 0.2s ease-out',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
-              },
-              slideDown: {
-                '0%': { opacity: '0', transform: 'translateY(-10px) scale(0.95)' },
-                '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
-              }
-            }
-          }
-        }
-      }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-      body {
-        background-color: #171a21;
-        color: #c7d5e0;
-        font-family: 'Outfit', sans-serif;
-        font-size: 16px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        overflow-x: hidden;
-      }
-      
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #1b2838;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #2a475e;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #66c0f4;
-      }
 
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      input[type=number] {
-        -moz-appearance: textfield;
-      }
-
-      ::view-transition-old(root),
-      ::view-transition-new(root) {
-        animation: none;
-        mix-blend-mode: normal;
-        height: 100%;
-      }
-      ::view-transition-new(root) {
-        z-index: 9999;
-      }
-    </style>
-
-<link rel="stylesheet" href="/index.css">
   <script type="importmap">
 {
   "imports": {
@@ -114,7 +30,8 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/123123123123/assets/index-QedIiu3t.js"></script>
+  <script type="module" crossorigin src="/assets/index-C6lW3O3T.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CT9DWlt1.css">
 </head>
   <body>
     <div id="root"></div>
